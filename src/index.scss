@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.42857143;
+    font-size: 14px;
+    color: #000;
+    background: #fff;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #191919;
+    transition: 0.5s;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+    height: auto;
+}
+
+:root {
+    --orangeColor: #ea8025;
+}
+
+/*-----------------------------------*\
+ * #USED SASS
+\*-----------------------------------*/
+
+.container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
