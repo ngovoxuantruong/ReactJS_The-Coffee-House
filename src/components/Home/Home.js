@@ -25,6 +25,10 @@ import menuItem4 from '../../assets/img/menuListHome/menu-item4.webp';
 import menuItem5 from '../../assets/img/menuListHome/menu-item5.webp';
 import menuItem6 from '../../assets/img/menuListHome/menu-item6.webp';
 
+import cloudteaBG from '../../assets/img/Cloudtea/cloudtea-bg.webp';
+import cloudteaMenu from '../../assets/img/Cloudtea/cloudteaMenu.webp';
+import cloudteaTitle from '../../assets/img/Cloudtea/cloudteaTitle.webp';
+
 const Home = () => {
     const bannerList = [banner1, banner2, banner3, banner4, banner5];
 
@@ -55,9 +59,9 @@ const Home = () => {
                         modules={[Autoplay, Pagination, Navigation]}
                         className="mySwiper"
                     >
-                        {bannerList.map((bannerItem) => {
+                        {bannerList.map((bannerItem, index) => {
                             return (
-                                <SwiperSlide>
+                                <SwiperSlide key={index}>
                                     <div className="home-banner-item">
                                         <a href="#!">
                                             <picture>
@@ -81,25 +85,51 @@ const Home = () => {
                             </a>
                         </div>
 
-                        {menuListItems.map((menuItem) => {
+                        {menuListItems.map((menuItem, index) => {
                             return (
-                                <>
-                                    <div className="menu-item">
-                                        <div className="menu-item-img">
-                                            <a href="#!">
-                                                <img src={menuItem.src} alt="Menu" />
-                                            </a>
-                                        </div>
-                                        <div className="menu-item-info">
-                                            <h3>
-                                                <a href="#!">{menuItem.menuName}</a>
-                                            </h3>
-                                            <div className="price-product-item">{menuItem.price}</div>
-                                        </div>
+                                <div key={index} className="menu-item">
+                                    <div className="menu-item-img">
+                                        <a href="#!">
+                                            <img src={menuItem.src} alt="Menu" />
+                                        </a>
                                     </div>
-                                </>
+                                    <div className="menu-item-info">
+                                        <h3>
+                                            <a href="#!">{menuItem.menuName}</a>
+                                        </h3>
+                                        <div className="price-product-item">{menuItem.price}</div>
+                                    </div>
+                                </div>
                             );
                         })}
+                    </div>
+                </div>
+            </div>
+
+            <div className="home-cloudtea">
+                <div className="container">
+                    <div className="cloudtea-container">
+                        <div className="cloudtea-right">
+                            <img src={cloudteaMenu} alt="CloudteaMenu" />
+                        </div>
+
+                        <div className="cloudtea-left">
+                            <div className="cloudtea-title">
+                                <img src={cloudteaTitle} alt="CloudTeaTitle" />
+                            </div>
+
+                            <div className="cloudtea-desc">
+                                Vừa êm mượt dịu dàng, vừa bùng nổ nồng nàn, BST Trà Sữa CloudTea Hương Vị Nụ Hôn Đầu
+                                mang đến trải nghiệm đầy mới mẻ. Chạm môi là foam béo mịn bồng bềnh, càng thêm đậm đà
+                                nhờ topping vụn bánh quy phô mai hoặc bột ca cao thơm lừng. Kế tiếp là tầng trà sữa sóng
+                                sánh, đậm hương, rõ vị. Và tầng thạch nguyên chất, dai giòn giúp giữ trọn vị trà sữa đến
+                                ngụm cuối cùng. 3 tầng hòa quyện, nhấp một ngụm là ghiền, nhớ mãi không thôi.
+                            </div>
+
+                            <a href="#!" className="cloudtea-btn">
+                                <span>Thử ngay</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
