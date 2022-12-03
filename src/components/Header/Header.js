@@ -46,23 +46,172 @@ const Header = () => {
                                 <li className="nav-menu-item-lv1">
                                     <a href="#!">Cà Phê</a>
                                 </li>
+
                                 <li className="nav-menu-item-lv1">
                                     <a href="#!">Trà</a>
                                 </li>
-                                <li className="nav-menu-item-lv1">
-                                    <a href="#!">Menu</a>
-                                    <AiFillCaretDown />
+
+                                <li className="nav-menu-item-lv1 has-child">
+                                    <a href="#!">
+                                        Menu <AiFillCaretDown />
+                                    </a>
+
+                                    <ul className="nav-menu-lv2">
+                                        <li className="lv2-title">
+                                            <a href="#!">Tất Cả</a>
+                                        </li>
+
+                                        <li className="lv2-title">
+                                            <a href="#!">Cà Phê</a>
+                                            <ul className="menu-child-lv3">
+                                                <li className="lv3-title">
+                                                    <a href="#!">Cà Phê Việt Nam</a>
+                                                </li>
+                                                <li className="lv3-title">
+                                                    <a href="#!">Cà Phê Máy</a>
+                                                </li>
+                                                <li className="lv3-title">
+                                                    <a href="#!">Cold Brew</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li className="lv2-title">
+                                            <a href="#!">CloudFee</a>
+                                            <ul className="menu-child-lv3">
+                                                <li className="lv3-title">
+                                                    <a href="#!">CloudFee</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li className="lv2-title">
+                                            <a href="#!">CloudTea</a>
+                                            <ul className="menu-child-lv3">
+                                                <li className="lv3-title">
+                                                    <a href="#!">CloudTea</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li className="lv2-title">
+                                            <a href="#!">Trà</a>
+                                            <ul className="menu-child-lv3">
+                                                <li className="lv3-title">
+                                                    <a href="#!">Trà Trái Cây</a>
+                                                </li>
+                                                <li className="lv3-title">
+                                                    <a href="#!">Trà Sữa Macchiato</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li className="lv2-title">
+                                            <a href="#!">Hi-Tea Healthy</a>
+                                            <ul className="menu-child-lv3">
+                                                <li className="lv3-title">
+                                                    <a href="#!">Hi-Tea Trà</a>
+                                                </li>
+                                                <li className="lv3-title">
+                                                    <a href="#!">Hi-Tea Đá Tuyết</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li className="lv2-title">
+                                            <a href="#!">Bánh & Snack</a>
+                                            <ul className="menu-child-lv3">
+                                                <li className="lv3-title">
+                                                    <a href="#!">Bánh Mặn</a>
+                                                </li>
+                                                <li className="lv3-title">
+                                                    <a href="#!">Bánh Ngọt</a>
+                                                </li>
+                                                <li className="lv3-title">
+                                                    <a href="#!">Snack</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li className="lv2-title">
+                                            <a href="#!">Tại Nhà</a>
+                                            <ul className="menu-child-lv3">
+                                                <li className="lv3-title">
+                                                    <a href="#!">Cà Phê Tại Nhà</a>
+                                                </li>
+                                                <li className="lv3-title">
+                                                    <a href="#!">Trà Tại Nhà</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li className="lv2-title">
+                                            <a href="#!">Thức Uống Khác</a>
+                                            <ul className="menu-child-lv3">
+                                                <li className="lv3-title">
+                                                    <a href="#!">Chocolate</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li className="nav-menu-item-lv1">
-                                    <a href="#!">Chuyện Nhà</a>
-                                    <AiFillCaretDown />
+                                    <a href="#!">
+                                        Chuyện Nhà <AiFillCaretDown />
+                                    </a>
+
+                                    <ul className="nav-menu-lv2">
+                                        <li className="lv2-title">
+                                            <a href="#!">Coffeeholic</a>
+                                            <ul className="menu-child-lv3">
+                                                <li className="lv3-title">
+                                                    <a href="#!">#chuyencaphe</a>
+                                                </li>
+                                                <li className="lv3-title">
+                                                    <a href="#!">#phacaphe</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li className="lv2-title">
+                                            <a href="#!">Teaholic</a>
+                                            <ul className="menu-child-lv3">
+                                                <li className="lv3-title">
+                                                    <a href="#!">#phatra</a>
+                                                </li>
+                                                <li className="lv3-title">
+                                                    <a href="#!">#cauchuyenvetra</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li className="lv2-title">
+                                            <a href="#!">Blog</a>
+                                            <ul className="menu-child-lv3">
+                                                <li className="lv3-title">
+                                                    <a href="#!">#inthemood</a>
+                                                </li>
+
+                                                <li className="lv3-title">
+                                                    <a href="#!">#Review</a>
+                                                </li>
+
+                                                <li className="lv3-title">
+                                                    <a href="#!">#HumanofTCH</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </li>
+
                                 <li className="nav-menu-item-lv1">
                                     <a href="#!">Cảm Hứng CloudFee</a>
                                 </li>
+
                                 <li className="nav-menu-item-lv1">
                                     <a href="#!">Cửa Hàng</a>
                                 </li>
+
                                 <li className="nav-menu-item-lv1">
                                     <a href="#!">Tuyển dụng</a>
                                 </li>

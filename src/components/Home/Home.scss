@@ -28,6 +28,12 @@ span.swiper-pagination-bullet {
     width: 16px;
     height: 2px;
     background: #fff;
+    border-radius: 0;
+    opacity: 1;
+}
+
+span.swiper-pagination-bullet-active {
+    background-color: var(--orangeColor);
 }
 
 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
