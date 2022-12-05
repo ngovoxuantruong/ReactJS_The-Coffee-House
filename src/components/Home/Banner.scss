@@ -1,0 +1,41 @@
+.home {
+    .home-banner {
+        transform: translateY(-60px);
+    }
+
+    .banner-picture {
+        width: 100%;
+    }
+}
+
+.swiper-button-prev {
+    margin-left: 50px;
+}
+
+.swiper-button-next {
+    margin-right: 50px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 16px;
+    color: #000;
+}
+
+span.swiper-pagination-bullet {
+    display: inline-block;
+    margin: 0 1px;
+    width: 16px;
+    height: 2px;
+    background: #fff;
+    border-radius: 0;
+    opacity: 1;
+}
+
+span.swiper-pagination-bullet-active {
+    background-color: var(--orangeColor);
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 15px;
+}

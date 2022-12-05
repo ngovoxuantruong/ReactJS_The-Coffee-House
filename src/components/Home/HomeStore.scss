@@ -1,0 +1,101 @@
+.homestore {
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 160px;
+}
+
+.storebg {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.store_container {
+    display: flex;
+    position: absolute;
+    top: 0;
+
+    .store_slider_content {
+        align-self: center;
+
+        .store_slider_title {
+            font-size: 28px;
+            color: #000000d9;
+            font-weight: 600;
+            max-width: 75%;
+        }
+
+        .store_slider_desc {
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 75%;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .store_slider_wrap {
+            padding: 12px 90px;
+            background: #b3ddca;
+            display: inline-block;
+            transform: perspective(1px) translateZ(0);
+            position: relative;
+            transition: color 0.5s;
+            border-radius: 8px;
+
+            .store_slider_btn {
+                font-weight: 600;
+                font-size: 16px;
+                color: #fff;
+                letter-spacing: 1px;
+            }
+
+            &::after {
+                content: '';
+
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+                border: 1px solid #b3ddca;
+                border-radius: 8px;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -2;
+                background: #fff;
+                border: 1px solid #b3ddca;
+                border-radius: 8px;
+                transform: scaleX(0);
+                transform-origin: 0 50%;
+                transition: transform 0.5s ease-out;
+            }
+
+            &:hover .store_slider_btn {
+                color: var(--orangeColor);
+            }
+
+            &:hover::before {
+                transform: scaleX(1);
+            }
+        }
+    }
+
+    .store_slider_img {
+    }
+}
+
+.store_img {
+    max-width: 700px;
+    border-radius: 8px;
+}

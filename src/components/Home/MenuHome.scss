@@ -1,45 +1,3 @@
-.home {
-    .home-banner {
-        transform: translateY(-60px);
-    }
-
-    .banner-picture {
-        width: 100%;
-    }
-}
-
-.swiper-button-prev {
-    margin-left: 50px;
-}
-
-.swiper-button-next {
-    margin-right: 50px;
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-    font-size: 16px;
-    color: #000;
-}
-
-span.swiper-pagination-bullet {
-    display: inline-block;
-    margin: 0 1px;
-    width: 16px;
-    height: 2px;
-    background: #fff;
-    border-radius: 0;
-    opacity: 1;
-}
-
-span.swiper-pagination-bullet-active {
-    background-color: var(--orangeColor);
-}
-
-.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 15px;
-}
-
 .menu-list-home {
     display: flex;
     flex-wrap: wrap;
@@ -118,61 +76,6 @@ span.swiper-pagination-bullet-active {
                     margin-bottom: 10px;
                 }
             }
-        }
-    }
-}
-
-.home-cloudtea {
-    padding: 48px 0 45px;
-    font-weight: 400;
-    background: #45392c
-        url('https://file.hstatic.net/1000075078/file/cloudtea-bg-2x_9f42dcb41fd04a8e817922b2d6edad32.jpg') top
-        center/cover no-repeat;
-}
-
-.cloudtea-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: warp;
-    margin-bottom: 8px;
-
-    .cloudtea-right {
-        flex: 0 0 49%;
-        width: 49%;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    .cloudtea-left {
-        flex: 0 0 49%;
-        width: 49%;
-        order: 2;
-
-        .cloudtea-title {
-            margin-bottom: 12px;
-        }
-
-        .cloudtea-desc {
-            font-size: 16px;
-            line-height: 24px;
-            color: rgba(0, 0, 0, 0.85);
-            margin-bottom: 16px;
-        }
-
-        .cloudtea-btn {
-            display: block;
-            max-width: 282px;
-            background: #b3ddca;
-            text-align: center;
-            font-size: 16px;
-            line-height: 40px;
-            padding: 0 15px;
-            font-weight: 600;
-            border-radius: 8px;
-            color: #fff;
         }
     }
 }
