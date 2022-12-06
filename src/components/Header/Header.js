@@ -4,31 +4,63 @@ import location from '../../assets/img/icons/location.webp';
 import delivery from '../../assets/img/icons/delivery.webp';
 import logo from '../../assets/img/logo.png';
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+
 import { AiFillCaretDown } from 'react-icons/ai';
 
 const Header = () => {
+    const topBarInfo = [
+        { img: location, text: '154 Cửa hàng khắp cả nước' },
+        { img: phone, text: 'Đặt hàng: 034.344.1421' },
+        { img: delivery, text: 'Freeship từ 50.000vnd' },
+    ];
+
     return (
         <>
             <div className="top-bar">
                 <div className="container">
-                    <div className="top-bar-item">
-                        <a href="#!">
-                            <img src={location} alt="location" />
-                            <span>154 Cửa hàng khắp cả nước</span>
-                        </a>
-                    </div>
-                    <div className="top-bar-item">
-                        <a href="#!">
-                            <img src={phone} alt="phone" />
-                            <span>Đặt hàng: 034.344.1421</span>
-                        </a>
-                    </div>
-                    <div className="top-bar-item">
-                        <a href="#!">
-                            <img src={delivery} alt="delivery" />
-                            <span>Freeship từ 50.000vnd</span>
-                        </a>
-                    </div>
+                    <Swiper
+                        className="mySwiper"
+                        breakpoints={{
+                            // when window width is >= 640px
+
+                            // when window width is >= 768px
+                            768: {
+                                width: 768,
+                                slidesPerView: 2,
+                            },
+                            1024: {
+                                width: 1024,
+                                slidesPerView: 2,
+                                allowTouchMove: true,
+                            },
+                            1440: {
+                                width: 768,
+                                slidesPerView: 2,
+                                allowTouchMove: false,
+                            },
+                        }}
+                    >
+                        {topBarInfo.map((item, index) => {
+                            return (
+                                <SwiperSlide key={index}>
+                                    <div className="top-bar-item">
+                                        <a href="#!">
+                                            <img
+                                                src={item.img}
+                                                alt="location"
+                                            />
+                                            <span>{item.text}</span>
+                                        </a>
+                                    </div>
+                                </SwiperSlide>
+                            );
+                        })}
+                    </Swiper>
                 </div>
             </div>
 
@@ -65,7 +97,9 @@ const Header = () => {
                                             <a href="#!">Cà Phê</a>
                                             <ul className="menu-child-lv3">
                                                 <li className="lv3-title">
-                                                    <a href="#!">Cà Phê Việt Nam</a>
+                                                    <a href="#!">
+                                                        Cà Phê Việt Nam
+                                                    </a>
                                                 </li>
                                                 <li className="lv3-title">
                                                     <a href="#!">Cà Phê Máy</a>
@@ -98,10 +132,14 @@ const Header = () => {
                                             <a href="#!">Trà</a>
                                             <ul className="menu-child-lv3">
                                                 <li className="lv3-title">
-                                                    <a href="#!">Trà Trái Cây</a>
+                                                    <a href="#!">
+                                                        Trà Trái Cây
+                                                    </a>
                                                 </li>
                                                 <li className="lv3-title">
-                                                    <a href="#!">Trà Sữa Macchiato</a>
+                                                    <a href="#!">
+                                                        Trà Sữa Macchiato
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -113,7 +151,9 @@ const Header = () => {
                                                     <a href="#!">Hi-Tea Trà</a>
                                                 </li>
                                                 <li className="lv3-title">
-                                                    <a href="#!">Hi-Tea Đá Tuyết</a>
+                                                    <a href="#!">
+                                                        Hi-Tea Đá Tuyết
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -137,7 +177,9 @@ const Header = () => {
                                             <a href="#!">Tại Nhà</a>
                                             <ul className="menu-child-lv3">
                                                 <li className="lv3-title">
-                                                    <a href="#!">Cà Phê Tại Nhà</a>
+                                                    <a href="#!">
+                                                        Cà Phê Tại Nhà
+                                                    </a>
                                                 </li>
                                                 <li className="lv3-title">
                                                     <a href="#!">Trà Tại Nhà</a>
@@ -165,7 +207,9 @@ const Header = () => {
                                             <a href="#!">Coffeeholic</a>
                                             <ul className="menu-child-lv3">
                                                 <li className="lv3-title">
-                                                    <a href="#!">#chuyencaphe</a>
+                                                    <a href="#!">
+                                                        #chuyencaphe
+                                                    </a>
                                                 </li>
                                                 <li className="lv3-title">
                                                     <a href="#!">#phacaphe</a>
@@ -180,7 +224,9 @@ const Header = () => {
                                                     <a href="#!">#phatra</a>
                                                 </li>
                                                 <li className="lv3-title">
-                                                    <a href="#!">#cauchuyenvetra</a>
+                                                    <a href="#!">
+                                                        #cauchuyenvetra
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </li>

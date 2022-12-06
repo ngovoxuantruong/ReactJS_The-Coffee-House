@@ -70,3 +70,15 @@ h6 {
         width: 740px;
     }
 }
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 376px) {
+    .container {
+        width: 100%;
+    }
+}
