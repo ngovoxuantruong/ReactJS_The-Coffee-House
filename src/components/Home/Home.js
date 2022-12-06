@@ -3,6 +3,7 @@ import MenuHome from './MenuHome';
 import HomeCloudTea from './HomeCloudTea';
 import HomeStore from './HomeStore';
 import Footer from '../Footer/Footer';
+import HomeStory from './HomeStory';
 
 const Home = () => {
     return (
@@ -14,6 +15,8 @@ const Home = () => {
             <HomeCloudTea />
 
             <HomeStore />
+
+            <HomeStory />
 
             <Footer />
         </div>

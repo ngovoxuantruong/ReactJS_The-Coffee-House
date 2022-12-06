@@ -1,4 +1,4 @@
-import './MenuHome.scss';
+import './HomeSCSS/MenuHome.scss';
 
 import bannerMenu from '../../assets/img/menuListHome/menu-banner.webp';
 import menuItem1 from '../../assets/img/menuListHome/menu-item1.webp';

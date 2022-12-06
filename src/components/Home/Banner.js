@@ -15,7 +15,7 @@ import banner3 from '../../assets/img/banners/banner3.webp';
 import banner4 from '../../assets/img/banners/banner4.webp';
 import banner5 from '../../assets/img/banners/banner5.webp';
 
-import './Banner.scss';
+import './HomeSCSS/Banner.scss';
 
 const Banner = () => {
     const bannerList = [banner1, banner2, banner3, banner4, banner5];

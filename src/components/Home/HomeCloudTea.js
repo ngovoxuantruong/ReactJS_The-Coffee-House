@@ -1,4 +1,4 @@
-import './HomeCloudTea.scss';
+import './HomeSCSS/HomeCloudTea.scss';
 
 import cloudteaMenu from '../../assets/img/Cloudtea/cloudteaMenu.webp';
 import cloudteaTitle from '../../assets/img/Cloudtea/cloudteaTitle.webp';

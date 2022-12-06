@@ -1,4 +1,4 @@
-import './HomeStore.scss';
+import './HomeSCSS/HomeStore.scss';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';

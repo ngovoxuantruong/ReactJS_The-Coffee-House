@@ -94,7 +94,9 @@ const Footer = () => {
                             </ul>
                         </Col>
 
-                        <hr />
+                        <Col lg={12} md={12} sm={12} xs={12}>
+                            <hr />
+                        </Col>
 
                         <Col lg={9} md={9} sm={9} xs={12}>
                             <ul className="footer_itemlist">
