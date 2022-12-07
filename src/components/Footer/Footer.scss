@@ -85,3 +85,27 @@
         font-family: 'Lato', sans-serif;
     }
 }
+
+/*-----------------------------------*\
+ * #Media query
+\*-----------------------------------*/
+
+@media (max-width: 768px) {
+    .footer_container {
+        .footer-item-gt {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .footer_container {
+        .footer-item-gt {
+            margin-bottom: 25px;
+        }
+
+        .footer-item-hl {
+            margin-bottom: 25px;
+        }
+    }
+}

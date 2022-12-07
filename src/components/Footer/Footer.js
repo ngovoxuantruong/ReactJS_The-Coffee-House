@@ -14,7 +14,13 @@ const Footer = () => {
             <div className="container">
                 <div className="footer_container">
                     <Row>
-                        <Col lg={3} md={3} sm={6} xs={6}>
+                        <Col
+                            className="footer-item-gt"
+                            lg={3}
+                            md={6}
+                            sm={6}
+                            xs={6}
+                        >
                             <h3 className="footer_title">Giới thiệu</h3>
 
                             <ul className="footer_linklists">
@@ -39,7 +45,13 @@ const Footer = () => {
                             </ul>
                         </Col>
 
-                        <Col lg={3} md={3} sm={6} xs={6}>
+                        <Col
+                            className="footer-item-dk"
+                            lg={3}
+                            md={6}
+                            sm={6}
+                            xs={6}
+                        >
                             <h3 className="footer_title">Điều khoản</h3>
 
                             <ul className="footer_linklists">
@@ -47,12 +59,20 @@ const Footer = () => {
                                     <a href="#!">Điều khoản bảo mật</a>
                                 </li>
                                 <li>
-                                    <a href="#!">Chỉnh sách bảo mật thông tin</a>
+                                    <a href="#!">
+                                        Chỉnh sách bảo mật thông tin
+                                    </a>
                                 </li>
                             </ul>
                         </Col>
 
-                        <Col lg={3} md={3} sm={6} xs={12}>
+                        <Col
+                            className="footer-item-hl"
+                            lg={3}
+                            md={6}
+                            sm={12}
+                            xs={12}
+                        >
                             <div className="hotline_footer">
                                 <p>
                                     <img src={phone} alt="phone" />
@@ -75,7 +95,13 @@ const Footer = () => {
                             </div>
                         </Col>
 
-                        <Col lg={3} md={3} sm={6} xs={12}>
+                        <Col
+                            className="footer-item-img"
+                            lg={3}
+                            md={6}
+                            sm={6}
+                            xs={12}
+                        >
                             <div className="footer_img">
                                 <img src={socialImg} alt="Social img" />
                             </div>
@@ -83,12 +109,22 @@ const Footer = () => {
                             <ul className="footer_social_link">
                                 <li>
                                     <a href="#!">
-                                        <AiOutlineFacebook style={{ color: 'white', fontSize: '25px' }} />
+                                        <AiOutlineFacebook
+                                            style={{
+                                                color: 'white',
+                                                fontSize: '25px',
+                                            }}
+                                        />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#!">
-                                        <AiOutlineInstagram style={{ color: 'white', fontSize: '25px' }} />
+                                        <AiOutlineInstagram
+                                            style={{
+                                                color: 'white',
+                                                fontSize: '25px',
+                                            }}
+                                        />
                                     </a>
                                 </li>
                             </ul>
@@ -100,16 +136,24 @@ const Footer = () => {
 
                         <Col lg={9} md={9} sm={9} xs={12}>
                             <ul className="footer_itemlist">
-                                <li>Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN</li>
                                 <li>
-                                    Mã số DN: 0312867172 do sở kế hoạch và đầu tư tp. HCM cấp ngày 23/07/2014. Người đại
+                                    Công ty cổ phần thương mại dịch vụ Trà Cà
+                                    Phê VN
+                                </li>
+                                <li>
+                                    Mã số DN: 0312867172 do sở kế hoạch và đầu
+                                    tư tp. HCM cấp ngày 23/07/2014. Người đại
                                     diện: NGÔ NGUYÊN KHA
                                 </li>
                                 <li>
-                                    Địa chỉ: 86-88 Cao Thắng, phường 04, quận 3, tp Hồ Chí Minh Điện thoại: (028) 7107
-                                    8079 Email: hi@thecoffeehouse.vn
+                                    Địa chỉ: 86-88 Cao Thắng, phường 04, quận 3,
+                                    tp Hồ Chí Minh Điện thoại: (028) 7107 8079
+                                    Email: hi@thecoffeehouse.vn
                                 </li>
-                                <li>© 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu</li>
+                                <li>
+                                    © 2014-2022 Công ty cổ phần thương mại dịch
+                                    vụ Trà Cà Phê VN mọi quyền bảo lưu
+                                </li>
                             </ul>
                         </Col>
                     </Row>

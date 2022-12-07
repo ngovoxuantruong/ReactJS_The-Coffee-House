@@ -56,6 +56,10 @@
         }
     }
 
+    .sidebar {
+        display: none;
+    }
+
     .nav-menu {
         .nav-menu-lv1 {
             display: flex;
@@ -171,9 +175,26 @@
     .header-nav {
         justify-content: center;
         line-height: 70px;
+
+        .sidebar {
+            display: block;
+            position: absolute;
+            left: 0;
+
+            img {
+                width: 28px;
+                line-height: 8px;
+                margin-bottom: 15px;
+                margin-left: 10px;
+            }
+        }
     }
 
     .header-nav .nav-menu .nav-menu-lv1 {
         display: none;
+    }
+
+    .nav-logo {
+        margin-left: 25px;
     }
 }

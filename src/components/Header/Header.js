@@ -26,9 +26,6 @@ const Header = () => {
                     <Swiper
                         className="mySwiper"
                         breakpoints={{
-                            // when window width is >= 640px
-
-                            // when window width is >= 768px
                             768: {
                                 width: 768,
                                 slidesPerView: 2,
@@ -67,6 +64,13 @@ const Header = () => {
             <div className="header">
                 <div className="container">
                     <div className="header-nav">
+                        <div className="sidebar">
+                            <img
+                                style={{ width: '28px' }}
+                                src="https://icons.veryicon.com/png/o/miscellaneous/we/sidebar-2.png"
+                                alt="vector sidebar"
+                            />
+                        </div>
                         <div className="nav-logo">
                             <a href="#!">
                                 <img className="logo" src={logo} alt="logo" />
