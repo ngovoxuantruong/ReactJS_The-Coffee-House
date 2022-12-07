@@ -1,7 +1,7 @@
 .homestore {
     position: relative;
     margin-top: 80px;
-    margin-bottom: 160px;
+    padding-bottom: 160px;
 }
 
 .storebg {
@@ -97,4 +97,61 @@
 .store_img {
     max-width: 700px;
     border-radius: 8px;
+}
+
+/*-----------------------------------*\
+ * #Media query
+\*-----------------------------------*/
+
+@media (max-width: 1024px) {
+    .storebg {
+        margin-bottom: 201px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .store_container {
+        display: flex;
+        position: absolute;
+        top: 0;
+        flex-direction: column;
+        align-items: center;
+
+        .store_slider_content {
+            order: 2;
+            margin-top: 30px;
+
+            .store_slider_title {
+                font-size: 20px;
+            }
+
+            .store_slider_desc {
+                max-width: 95%;
+            }
+
+            .store_slider_wrap {
+                width: 95%;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+
+        .store_slider_img {
+            img {
+                width: 95%;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
 }

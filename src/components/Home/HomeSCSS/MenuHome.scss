@@ -79,3 +79,22 @@
         }
     }
 }
+
+/*-----------------------------------*\
+ * #Media query
+\*-----------------------------------*/
+
+@media (max-width: 768px) {
+    .menu-list-home {
+        display: flex;
+
+        .menu-banner {
+            flex: 0 0 calc(100% - 30px);
+            margin: 0 15px 40px 15px;
+        }
+
+        .menu-item {
+            flex: 0 0 calc(50% - 30px);
+        }
+    }
+}

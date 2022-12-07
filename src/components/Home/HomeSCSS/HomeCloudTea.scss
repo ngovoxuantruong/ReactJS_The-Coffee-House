@@ -2,8 +2,8 @@
     padding: 48px 0 45px;
     font-weight: 400;
     background: #45392c
-        url('https://file.hstatic.net/1000075078/file/cloudtea-bg-2x_9f42dcb41fd04a8e817922b2d6edad32.jpg') top
-        center/cover no-repeat;
+        url('https://file.hstatic.net/1000075078/file/cloudtea-bg-2x_9f42dcb41fd04a8e817922b2d6edad32.jpg')
+        top center/cover no-repeat;
 }
 
 .cloudtea-container {
@@ -49,6 +49,42 @@
             font-weight: 600;
             border-radius: 8px;
             color: #fff;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+/*-----------------------------------*\
+ * #Media query
+\*-----------------------------------*/
+
+@media (max-width: 600px) {
+    .home-cloudtea {
+        padding: 40px 0 56px;
+        background: url('https://file.hstatic.net/1000075078/file/cloudtea-bg-2x_9f42dcb41fd04a8e817922b2d6edad32.jpg')
+            top center/100% no-repeat;
+    }
+
+    .cloudtea-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 8px;
+
+        .cloudtea-right {
+            width: 100%;
+        }
+
+        .cloudtea-left {
+            width: 100%;
+            margin-top: 20px;
+
+            .cloudtea-btn {
+                max-width: 100%;
+            }
         }
     }
 }

@@ -10,11 +10,23 @@ import menuItem6 from '../../assets/img/menuListHome/menu-item6.webp';
 
 const MenuHome = () => {
     const menuListItems = [
-        { src: menuItem1, menuName: 'CloudFee Hạnh Nhân Nướng', price: '49.000 đ' },
-        { src: menuItem2, menuName: 'The Coffee House Sữa Đá', price: '39.000 đ' },
+        {
+            src: menuItem1,
+            menuName: 'CloudFee Hạnh Nhân Nướng',
+            price: '49.000 đ',
+        },
+        {
+            src: menuItem2,
+            menuName: 'The Coffee House Sữa Đá',
+            price: '39.000 đ',
+        },
         { src: menuItem3, menuName: 'Hi-Tea Vải', price: '49.000 đ' },
         { src: menuItem4, menuName: 'Cà Phê Sữa Đá', price: '29.000 đ' },
-        { src: menuItem5, menuName: 'Bánh Mì VN Thịt Nguội', price: '35.000 đ' },
+        {
+            src: menuItem5,
+            menuName: 'Bánh Mì VN Thịt Nguội',
+            price: '35.000 đ',
+        },
         { src: menuItem6, menuName: 'Mochi Kem Chocolate', price: '19.000 đ' },
     ];
 
@@ -40,7 +52,9 @@ const MenuHome = () => {
                                     <h3>
                                         <a href="#!">{menuItem.menuName}</a>
                                     </h3>
-                                    <div className="price-product-item">{menuItem.price}</div>
+                                    <div className="price-product-item">
+                                        {menuItem.price}
+                                    </div>
                                 </div>
                             </div>
                         );

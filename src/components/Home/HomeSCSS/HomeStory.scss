@@ -28,6 +28,7 @@
 .homestory_blog_list {
     display: flex;
     margin: 0 -15px;
+    flex-wrap: wrap;
 
     .blog_item {
         margin-bottom: 30px;
@@ -83,5 +84,27 @@
     p {
         margin-bottom: 10px;
         line-height: 24px;
+    }
+}
+
+/*-----------------------------------*\
+ * #Media query
+\*-----------------------------------*/
+
+@media (max-width: 1024px) {
+    .homestory_blog_list {
+        .blog_item {
+            flex: 0 0 calc(50% - 30px);
+            min-height: 340px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .homestory_blog_list {
+        .blog_item {
+            flex: 0 0 calc(100% - 30px);
+            min-height: 240px;
+        }
     }
 }
