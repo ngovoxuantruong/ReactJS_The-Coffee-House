@@ -1,3 +1,6 @@
+import React, { Fragment } from 'react';
+import { NavLink, Link } from 'react-router-dom';
+import Media from 'react-media';
 import './Header.scss';
 import phone from '../../assets/img/icons/phone.webp';
 import location from '../../assets/img/icons/location.webp';
@@ -23,41 +26,80 @@ const Header = () => {
         <>
             <div className="top-bar">
                 <div className="container">
-                    <Swiper
-                        className="mySwiper"
-                        breakpoints={{
-                            768: {
-                                width: 768,
-                                slidesPerView: 2,
-                            },
-                            1024: {
-                                width: 1024,
-                                slidesPerView: 2,
-                                allowTouchMove: true,
-                            },
-                            1440: {
-                                width: 768,
-                                slidesPerView: 2,
-                                allowTouchMove: false,
-                            },
+                    <Media
+                        queries={{
+                            medium: '(max-width: 1024px)',
+                            large: '(min-width: 1025px)',
                         }}
                     >
-                        {topBarInfo.map((item, index) => {
-                            return (
-                                <SwiperSlide key={index}>
-                                    <div className="top-bar-item">
-                                        <a href="#!">
-                                            <img
-                                                src={item.img}
-                                                alt="location"
-                                            />
-                                            <span>{item.text}</span>
-                                        </a>
-                                    </div>
-                                </SwiperSlide>
-                            );
-                        })}
-                    </Swiper>
+                        {(matches) => (
+                            <Fragment>
+                                {matches.medium && (
+                                    <>
+                                        <Swiper
+                                            className="mySwiper"
+                                            breakpoints={{
+                                                // when window width is >= 640px
+                                                300: {
+                                                    width: 300,
+                                                    slidesPerView: 0,
+                                                },
+                                                640: {
+                                                    width: 640,
+                                                    slidesPerView: 1,
+                                                },
+                                                // when window width is >= 768px
+                                                768: {
+                                                    width: 768,
+                                                    slidesPerView: 2,
+                                                },
+                                            }}
+                                        >
+                                            {topBarInfo.map((item, index) => {
+                                                return (
+                                                    <SwiperSlide key={index}>
+                                                        <div className="top-bar-item">
+                                                            <a href="">
+                                                                <img
+                                                                    src={
+                                                                        item.img
+                                                                    }
+                                                                    alt="location"
+                                                                />
+                                                                <span>
+                                                                    {item.text}
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                );
+                                            })}
+                                        </Swiper>
+                                    </>
+                                )}
+                                {matches.large && (
+                                    <>
+                                        {topBarInfo.map((item, index) => {
+                                            return (
+                                                <div
+                                                    key={index}
+                                                    className="top-bar-item"
+                                                >
+                                                    <a href="">
+                                                        <img
+                                                            src={item.img}
+                                                            alt="location"
+                                                        />
+                                                        <span>{item.text}</span>
+                                                    </a>
+                                                </div>
+                                            );
+                                        })}
+                                    </>
+                                )}
+                            </Fragment>
+                        )}
+                    </Media>
                 </div>
             </div>
 
@@ -72,19 +114,23 @@ const Header = () => {
                             />
                         </div>
                         <div className="nav-logo">
-                            <a href="#!">
+                            <Link to={'/'}>
                                 <img className="logo" src={logo} alt="logo" />
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="nav-menu">
                             <ul className="nav-menu-lv1">
                                 <li className="nav-menu-item-lv1">
-                                    <a href="#!">Cà Phê</a>
+                                    <NavLink to={'/collections/ca-phe-tai-nha'}>
+                                        Cà Phê
+                                    </NavLink>
                                 </li>
 
                                 <li className="nav-menu-item-lv1">
-                                    <a href="#!">Trà</a>
+                                    <NavLink to={'/collections/tra-tai-nha'}>
+                                        Trà
+                                    </NavLink>
                                 </li>
 
                                 <li className="nav-menu-item-lv1 has-child">

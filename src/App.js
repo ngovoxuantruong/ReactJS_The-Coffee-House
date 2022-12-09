@@ -1,12 +1,13 @@
-import './App.scss';
-import Header from './components/Header/Header';
-import Home from './components/Home/Home';
-
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 import { SlEarphonesAlt } from 'react-icons/sl';
 import { useState } from 'react';
+import { Outlet } from 'react-router-dom';
+
+import './App.scss';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
     const [modalShow, setModalShow] = useState(false);
@@ -61,27 +62,31 @@ const App = () => {
         <>
             <div className="App">
                 <Header />
-                <Home />
-            </div>
 
-            <a
-                className="hotline_btn"
-                href="#!"
-                onClick={() => setModalShow(true)}
-            >
-                <SlEarphonesAlt
-                    style={{
-                        color: 'white',
-                        fontSize: '20px',
-                        fontWeight: 600,
-                    }}
+                <a
+                    className="hotline_btn"
+                    href="#!"
+                    onClick={() => setModalShow(true)}
+                >
+                    <SlEarphonesAlt
+                        style={{
+                            color: 'white',
+                            fontSize: '20px',
+                            fontWeight: 600,
+                        }}
+                    />
+                </a>
+
+                <MyVerticallyCenteredModal
+                    show={modalShow}
+                    onHide={() => setModalShow(false)}
                 />
-            </a>
 
-            <MyVerticallyCenteredModal
-                show={modalShow}
-                onHide={() => setModalShow(false)}
-            />
+                {/* Render children route */}
+                <Outlet />
+
+                <Footer />
+            </div>
         </>
     );
 };

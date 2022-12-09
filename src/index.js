@@ -1,15 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+    createBrowserRouter,
+    RouterProvider,
+    Route,
+    BrowserRouter,
+    Routes,
+} from 'react-router-dom';
+
+import Home from './components/Home/Home';
+import Collections from './components/Collection/Collections';
+import CoffeeAtHome from '../src/components/Collection/CoffeeAtHome';
+import TeaAtHome from './components/Collection/TeaAtHome';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <App />
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<App />}>
+                    <Route index element={<Home />} />
+                </Route>
+
+                <Route path="/collections" element={<App />}>
+                    <Route path="ca-phe-tai-nha" element={<CoffeeAtHome />} />
+                    <Route path="tra-tai-nha" element={<TeaAtHome />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
     </React.StrictMode>,
 );
 
