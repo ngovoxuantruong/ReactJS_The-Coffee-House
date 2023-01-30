@@ -1,0 +1,47 @@
+.inprogress {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    margin-bottom: 25px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.loading {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading .line-box {
+    padding: 2px;
+    width: 40%;
+    line-height: 20px;
+    border: 2px solid #267591;
+    border-radius: 20px;
+}
+
+.loading .line-box .line {
+    height: 20px;
+    border-radius: 20px;
+    background-color: #67d295;
+    animation: loading 2s forwards cubic-bezier(0, 0, 0, 0);
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}

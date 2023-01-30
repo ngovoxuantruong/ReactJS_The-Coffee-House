@@ -22,13 +22,11 @@
             font-size: 28px;
             color: #000000d9;
             font-weight: 600;
-            max-width: 75%;
         }
 
         .store_slider_desc {
             font-size: 16px;
             line-height: 24px;
-            max-width: 75%;
             display: -webkit-box;
             -webkit-line-clamp: 5;
             -webkit-box-orient: vertical;
@@ -89,9 +87,6 @@
             }
         }
     }
-
-    .store_slider_img {
-    }
 }
 
 .store_img {
@@ -149,9 +144,27 @@
 }
 
 @media (max-width: 600px) {
+    .homestore {
+        margin-top: 40px;
+        padding-bottom: 80px;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
-        align-items: baseline;
+        align-items: center;
+    }
+
+    .store_slider_content {
+        padding: 20px;
+    }
+
+    .store_container {
+        .store_slider_content {
+            .store_slider_desc,
+            .store_slider_wrap {
+                max-width: 100%;
+            }
+        }
     }
 }

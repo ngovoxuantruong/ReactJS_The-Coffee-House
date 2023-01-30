@@ -1,7 +1,9 @@
+import './Header.scss';
+
 import React, { Fragment } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import Media from 'react-media';
-import './Header.scss';
+
 import phone from '../../assets/img/icons/phone.webp';
 import location from '../../assets/img/icons/location.webp';
 import delivery from '../../assets/img/icons/delivery.webp';
@@ -134,60 +136,58 @@ const Header = () => {
                                 </li>
 
                                 <li className="nav-menu-item-lv1 has-child">
-                                    <a href="#!">
+                                    <NavLink to={'/inprogress'}>
                                         Menu <AiFillCaretDown />
-                                    </a>
+                                    </NavLink>
 
                                     <ul className="nav-menu-lv2">
                                         <li className="lv2-title">
-                                            <a href="#!">Tất Cả</a>
+                                            <a href="#">Tất Cả</a>
                                         </li>
 
                                         <li className="lv2-title">
-                                            <a href="#!">Cà Phê</a>
+                                            <a href="#">Cà Phê</a>
                                             <ul className="menu-child-lv3">
                                                 <li className="lv3-title">
-                                                    <a href="#!">
+                                                    <a href="#">
                                                         Cà Phê Việt Nam
                                                     </a>
                                                 </li>
                                                 <li className="lv3-title">
-                                                    <a href="#!">Cà Phê Máy</a>
+                                                    <a href="#">Cà Phê Máy</a>
                                                 </li>
                                                 <li className="lv3-title">
-                                                    <a href="#!">Cold Brew</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-                                        <li className="lv2-title">
-                                            <a href="#!">CloudFee</a>
-                                            <ul className="menu-child-lv3">
-                                                <li className="lv3-title">
-                                                    <a href="#!">CloudFee</a>
+                                                    <a href="#">Cold Brew</a>
                                                 </li>
                                             </ul>
                                         </li>
 
                                         <li className="lv2-title">
-                                            <a href="#!">CloudTea</a>
+                                            <a href="#">CloudFee</a>
                                             <ul className="menu-child-lv3">
                                                 <li className="lv3-title">
-                                                    <a href="#!">CloudTea</a>
+                                                    <a href="#">CloudFee</a>
                                                 </li>
                                             </ul>
                                         </li>
 
                                         <li className="lv2-title">
-                                            <a href="#!">Trà</a>
+                                            <a href="#">CloudTea</a>
                                             <ul className="menu-child-lv3">
                                                 <li className="lv3-title">
-                                                    <a href="#!">
-                                                        Trà Trái Cây
-                                                    </a>
+                                                    <a href="#">CloudTea</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li className="lv2-title">
+                                            <a href="#">Trà</a>
+                                            <ul className="menu-child-lv3">
+                                                <li className="lv3-title">
+                                                    <a href="#">Trà Trái Cây</a>
                                                 </li>
                                                 <li className="lv3-title">
-                                                    <a href="#!">
+                                                    <a href="#">
                                                         Trà Sữa Macchiato
                                                     </a>
                                                 </li>
@@ -195,13 +195,13 @@ const Header = () => {
                                         </li>
 
                                         <li className="lv2-title">
-                                            <a href="#!">Hi-Tea Healthy</a>
+                                            <a href="#">Hi-Tea Healthy</a>
                                             <ul className="menu-child-lv3">
                                                 <li className="lv3-title">
-                                                    <a href="#!">Hi-Tea Trà</a>
+                                                    <a href="#">Hi-Tea Trà</a>
                                                 </li>
                                                 <li className="lv3-title">
-                                                    <a href="#!">
+                                                    <a href="#">
                                                         Hi-Tea Đá Tuyết
                                                     </a>
                                                 </li>
@@ -209,72 +209,70 @@ const Header = () => {
                                         </li>
 
                                         <li className="lv2-title">
-                                            <a href="#!">Bánh & Snack</a>
+                                            <a href="#">Bánh & Snack</a>
                                             <ul className="menu-child-lv3">
                                                 <li className="lv3-title">
-                                                    <a href="#!">Bánh Mặn</a>
+                                                    <a href="#">Bánh Mặn</a>
                                                 </li>
                                                 <li className="lv3-title">
-                                                    <a href="#!">Bánh Ngọt</a>
+                                                    <a href="#">Bánh Ngọt</a>
                                                 </li>
                                                 <li className="lv3-title">
-                                                    <a href="#!">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </li>
                                             </ul>
                                         </li>
 
                                         <li className="lv2-title">
-                                            <a href="#!">Tại Nhà</a>
+                                            <a href="#">Tại Nhà</a>
                                             <ul className="menu-child-lv3">
                                                 <li className="lv3-title">
-                                                    <a href="#!">
+                                                    <a href="#">
                                                         Cà Phê Tại Nhà
                                                     </a>
                                                 </li>
                                                 <li className="lv3-title">
-                                                    <a href="#!">Trà Tại Nhà</a>
+                                                    <a href="#">Trà Tại Nhà</a>
                                                 </li>
                                             </ul>
                                         </li>
 
                                         <li className="lv2-title">
-                                            <a href="#!">Thức Uống Khác</a>
+                                            <a href="#">Thức Uống Khác</a>
                                             <ul className="menu-child-lv3">
                                                 <li className="lv3-title">
-                                                    <a href="#!">Chocolate</a>
+                                                    <a href="#">Chocolate</a>
                                                 </li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
                                 <li className="nav-menu-item-lv1">
-                                    <a href="#!">
+                                    <NavLink to={'/inprogress'}>
                                         Chuyện Nhà <AiFillCaretDown />
-                                    </a>
+                                    </NavLink>
 
                                     <ul className="nav-menu-lv2">
                                         <li className="lv2-title">
-                                            <a href="#!">Coffeeholic</a>
+                                            <a href="#">Coffeeholic</a>
                                             <ul className="menu-child-lv3">
                                                 <li className="lv3-title">
-                                                    <a href="#!">
-                                                        #chuyencaphe
-                                                    </a>
+                                                    <a href="#">#chuyencaphe</a>
                                                 </li>
                                                 <li className="lv3-title">
-                                                    <a href="#!">#phacaphe</a>
+                                                    <a href="#">#phacaphe</a>
                                                 </li>
                                             </ul>
                                         </li>
 
                                         <li className="lv2-title">
-                                            <a href="#!">Teaholic</a>
+                                            <a href="#">Teaholic</a>
                                             <ul className="menu-child-lv3">
                                                 <li className="lv3-title">
-                                                    <a href="#!">#phatra</a>
+                                                    <a href="#">#phatra</a>
                                                 </li>
                                                 <li className="lv3-title">
-                                                    <a href="#!">
+                                                    <a href="#">
                                                         #cauchuyenvetra
                                                     </a>
                                                 </li>
@@ -282,18 +280,18 @@ const Header = () => {
                                         </li>
 
                                         <li className="lv2-title">
-                                            <a href="#!">Blog</a>
+                                            <a href="#">Blog</a>
                                             <ul className="menu-child-lv3">
                                                 <li className="lv3-title">
-                                                    <a href="#!">#inthemood</a>
+                                                    <a href="#">#inthemood</a>
                                                 </li>
 
                                                 <li className="lv3-title">
-                                                    <a href="#!">#Review</a>
+                                                    <a href="#">#Review</a>
                                                 </li>
 
                                                 <li className="lv3-title">
-                                                    <a href="#!">#HumanofTCH</a>
+                                                    <a href="#">#HumanofTCH</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -301,15 +299,21 @@ const Header = () => {
                                 </li>
 
                                 <li className="nav-menu-item-lv1">
-                                    <a href="#!">Cảm Hứng CloudFee</a>
+                                    <NavLink to={'/inprogress'}>
+                                        Cảm Hứng CloudFee
+                                    </NavLink>
                                 </li>
 
                                 <li className="nav-menu-item-lv1">
-                                    <a href="#!">Cửa Hàng</a>
+                                    <NavLink to={'/inprogress'}>
+                                        Cửa Hàng
+                                    </NavLink>
                                 </li>
 
                                 <li className="nav-menu-item-lv1">
-                                    <a href="#!">Tuyển dụng</a>
+                                    <NavLink to={'/inprogress'}>
+                                        Tuyển dụng
+                                    </NavLink>
                                 </li>
                             </ul>
                         </div>

@@ -16,6 +16,7 @@ import Home from './components/Home/Home';
 import Collections from './components/Collection/Collections';
 import CoffeeAtHome from '../src/components/Collection/CoffeeAtHome';
 import TeaAtHome from './components/Collection/TeaAtHome';
+import InProgress from './components/InProgress/InProgress';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +25,7 @@ root.render(
             <Routes>
                 <Route path="/" element={<App />}>
                     <Route index element={<Home />} />
+                    <Route path="/inprogress" element={<InProgress />} />
                 </Route>
 
                 <Route path="/collections" element={<App />}>

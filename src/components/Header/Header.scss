@@ -79,13 +79,10 @@
                     font-weight: 500;
                     margin-right: 5px;
 
-                    &:hover {
+                    &:hover,
+                    &:focus {
                         color: var(--orangeColor);
                     }
-                }
-
-                .active {
-                    color: var(--orangeColor);
                 }
             }
         }
